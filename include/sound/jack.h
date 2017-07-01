@@ -5,7 +5,6 @@
  *  Jack abstraction layer
  *
  *  Copyright 2008 Wolfson Microelectronics plc
- * Copyright (C) 2012 Sony Mobile Communications AB.
  *
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -25,7 +24,6 @@
  */
 
 #include <sound/core.h>
-#include <linux/switch.h>  // BAM_S C 130530 [Mig:]
 
 struct input_dev;
 
@@ -60,22 +58,8 @@ enum snd_jack_types {
 	SND_JACK_BTN_7		= 0x0080000,
 };
 
-// BAM_S C 130530 [Mig:]
-enum hs_sw_dev_state {
-	NO_DEVICE = 0,
-	DEVICE_HEADSET,
-	DEVICE_HEADPHONE,
-	DEVICE_UNSUPPORTED = 0xFE00,
-	DEVICE_UNKNOWN = 0xFF00,
-};
-// BAM_E C 130530
-
 struct snd_jack {
 	struct input_dev *input_dev;
-// BAM_S C 130530 [Mig:]
-	struct input_dev *indev_appkey;
-	struct switch_dev swdev;
-// BAM_E C 130530
 	int registered;
 	int type;
 	const char *id;
