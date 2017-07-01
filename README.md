@@ -13,6 +13,8 @@ This kernel feature is :
 - Added Double Tap 2 Wake Feature
 - Added CPU Voltage Control
 - Added Overclocked GPU to 500Mhz
+- Added Alucard Hotplug
+- Added USB Fastcharge 
 - Added custom CPU Governor 
 : Alucard,Intelliactive,IntelliMM,Lionheart,IntelliDemand & HYPER
 - Added custom I/O Sched Governor 
