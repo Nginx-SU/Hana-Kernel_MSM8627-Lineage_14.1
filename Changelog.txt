@@ -1,8 +1,10 @@
 Changelog :
 
-V1.4.2-R1 Beta Release :
+V1.4.3 Stable (夢) Release :
 - Updated sync kernel source to 20170701
 - Revert O3 optimization
+- Improved CPU Algorithm
+- Added Alucard Hotplug support for dual core
 - Misc change on thermal
 
 V1.4.2 Stable Release :
